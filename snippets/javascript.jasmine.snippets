@@ -20,6 +20,10 @@ snippet des
 		${2}
 	});${3}	
 
+# Expect not to be undefined
+snippet notu
+	expect(${1:target}).not.toBeUndefined();${2}
+
 # Expect not to be defined
 snippet notd
 	expect(${1:target}).not.toBeDefined();${2}
@@ -44,6 +48,10 @@ snippet notc
 snippet note
 	expect(${1:target}).not.toEqual(${2:value});${3}
 
+# Expect not to be
+snippet notb
+	expect(${1:target}).not.toBe(${2:value});${3}
+
 # Expect not to match
 snippet notm
 	expect(${1:target}).not.toMatch();${2}
@@ -51,6 +59,10 @@ snippet notm
 # Expect not
 snippet notx
 	expect(${1:target}).not;${2}
+
+# Expect to be undefined
+snippet eu
+	expect(${1:target}).toBeUndefined();${2}
 
 # Expect to be defined
 snippet ed
@@ -75,6 +87,10 @@ snippet ec
 # Expect to equal
 snippet ee
 	expect(${1:target}).toEqual(${2:value});${3}
+
+# Expect to be
+snippet eb
+	expect(${1:target}).toBe(${2:value});${3}
 
 # Expect to match
 snippet em
