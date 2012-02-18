@@ -46,36 +46,6 @@ snippet wft
 ##############################
 # MATCHERS AND MATCH HELPERS #
 ##############################
-# Expect not to be undefined
-snippet notu
-	expect(${1:target}).not.toBeUndefined();
-# Expect not to be defined
-snippet notd
-	expect(${1:target}).not.toBeDefined();
-# Expect not to be truthy
-snippet nott
-	expect(${1:target}).not.toBeTruthy();
-# Expect not to be falsy
-snippet notf
-	expect(${1:target}).not.toBeFalsy();
-# Expect not to be null
-snippet notn
-	expect(${1:target}).not.toBeNull();
-# Expect not to contain
-snippet notc
-	expect(${1:target}).not.toContain(${2:value});
-# Expect not to equal
-snippet note
-	expect(${1:target}).not.toEqual(${2:value});
-# Expect not to be
-snippet notb
-	expect(${1:target}).not.toBe(${2:value});
-# Expect not to match
-snippet notm
-	expect(${1:target}).not.toMatch();
-# Expect not
-snippet notx
-	expect(${1:target}).not${2};
 # Expect to be undefined
 snippet eu
 	expect(${1:target}).toBeUndefined();
@@ -106,6 +76,36 @@ snippet em
 # Expect
 snippet ex
 	expect(${1:target})${2};
+# Expect not to be undefined
+snippet notu
+	expect(${1:target}).not.toBeUndefined();
+# Expect not to be defined
+snippet notd
+	expect(${1:target}).not.toBeDefined();
+# Expect not to be truthy
+snippet nott
+	expect(${1:target}).not.toBeTruthy();
+# Expect not to be falsy
+snippet notf
+	expect(${1:target}).not.toBeFalsy();
+# Expect not to be null
+snippet notn
+	expect(${1:target}).not.toBeNull();
+# Expect not to contain
+snippet notc
+	expect(${1:target}).not.toContain(${2:value});
+# Expect not to equal
+snippet note
+	expect(${1:target}).not.toEqual(${2:value});
+# Expect not to be
+snippet notb
+	expect(${1:target}).not.toBe(${2:value});
+# Expect not to match
+snippet notm
+	expect(${1:target}).not.toMatch();
+# Expect not
+snippet notx
+	expect(${1:target}).not${2};
 # Any
 snippet any
 	jasmine.any(${1})
