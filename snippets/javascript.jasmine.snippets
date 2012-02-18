@@ -73,6 +73,15 @@ snippet eb
 # Expect to match
 snippet em
 	expect(${1:target}).toMatch(${2:pattern});
+# Expect greater than
+snippet eg
+	expect(${1:target}).toBeGreaterThan(${2:value});
+# Expect less than
+snippet el
+	expect(${1:target}).toBeLessThan(${2:value});
+# Expect close to
+snippet ect
+	expect(${1:target}).toBeCloseTo(${2:value}, ${3:precision});
 # Expect
 snippet ex
 	expect(${1:target})${2};
@@ -103,6 +112,15 @@ snippet notb
 # Expect not to match
 snippet notm
 	expect(${1:target}).not.toMatch();
+# Expect not greater than
+snippet notg
+	expect(${1:target}).not.toBeGreaterThan(${2:value});
+# Expect not less than
+snippet notl
+	expect(${1:target}).not.toBeLessThan(${2:value});
+# Expect not close to
+snippet notct
+	expect(${1:target}).not.toBeCloseTo(${2:value}, ${3:precision});
 # Expect not
 snippet notx
 	expect(${1:target}).not${2};
