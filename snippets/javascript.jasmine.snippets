@@ -33,6 +33,16 @@ snippet ru
 # Waits
 snippet wa
 	waits(${1});
+# Waits for
+snippet wf
+	waitsFor(function() {
+		${1}
+	});
+# Waits for with timeout
+snippet wft
+	waitsFor(function() {
+		${1}
+	}, "${2:message}", ${3:timeout});
 ##############################
 # MATCHERS AND MATCH HELPERS #
 ##############################
